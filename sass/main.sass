@@ -1,0 +1,533 @@
+@import "fonts"
+@import "libs"
+@import "vars"
+
+body
+	font-size: 16px
+	min-width: 320px
+	position: relative
+	line-height: 1.65
+	font-family: $default-font
+	overflow-x: hidden
+	opacity: 1
+a
+	text-decoration: none
+
+.header
+	height: 100px
+	width: 100%
+	background-color: $black
+.logo
+	font-family: "RalewayExtraBold"
+	font-size: 24px
+	color: $white
+	line-height: 100px
+.showMnu
+	float: right
+	line-height: 100px
+	font-size: 30px
+	color: $white
+	display: none
+.mainNav
+	float: right
+	ul
+		li
+			display: inline
+			line-height: 99px
+			padding: 10px 17px
+			&:first-child
+				background: $accent
+				pointer-events: none
+			&:last-child
+				padding-right: 0
+
+			a
+				text-decoration: none
+				color: $white
+				font-family: "OswaldRegular"
+				text-transform: uppercase
+				font-size: 14px
+				transition: 0.5s ease
+				&:hover
+					color: $accent
+.telNumber
+	position: absolute
+	font-family: "OswaldRegular"
+	font-size: 14px
+	color: $white
+	height: 38px
+	line-height: 38px
+	background-color: $accent
+	display: inline-block
+	float: right
+	z-index: 1
+	right: 15px
+	span
+		padding: 0px 25px 0px 25px
+
+.telNumberLink
+	color: $white
+	font-size: 16px
+	padding: 7px 10px 7px 14px
+	background-color: darken($accent, 5%)
+	&:hover
+		background-color: darken($accent, 10%)
+.topSlider
+	position: relative
+.topSliderSlide
+	position: relative
+	img
+		max-width: 1920px
+.topSliderText
+	display: inline-block
+	position: absolute
+	top: 35%
+.topSliderAboveTitle
+	display: inline-block
+	font-family: "OswaldRegular"
+	font-size: 14px
+	text-transform: uppercase
+	color: $white
+	padding: 13px
+	background-color: rgba(226, 80, 80, 0.8)
+	margin-bottom: 2px
+.topSliderMainTitle
+	font-family: "OswaldBold"
+	font-size: 30px
+	padding: 20px
+	color: $white
+	background-color: rgba(32, 32, 32, 0.8)
+	text-transform: uppercase
+	margin-bottom: 2px
+.topSliderUnderTitle
+	font-family: "OswaldRegular"
+	font-size: 18px
+	text-transform: uppercase
+	color: $white
+	background-color: rgba(32, 32, 32, 0.8)
+	padding: 15px 20px
+	display: inline-block
+.slick-arrow 
+	position: absolute
+	top: 45%
+	z-index: 1
+img[src="img/prevArrow.png"]
+	left: 3%		
+img[src="img/nextArrow.png"]
+	right: 3%	
+.featuresSection
+	padding-top: 60px
+.mainTitle
+	text-align: center
+	font-family: "OswaldBold"
+	font-size: 30px
+	color: $black
+	text-transform: uppercase
+	span
+		color: $accent
+.slogan
+	text-align: center
+	font-style: italic
+	color: $grey
+	font-size: 16px
+	margin-top: 15px
+.rhombusIcon
+	display:block
+	margin-top: 70px
+.largeRb
+	left: 50%
+	position: relative
+	width: 37px
+	height: 37px
+	background-color: $accent
+	z-index: 3
+	transform: rotate(45deg) translateX(-26px)
+	img
+		transform: rotate(-45deg) scale(0.8)
+		position: absolute
+		top: 5px
+		left: 7px
+.mediumRb
+	position: absolute
+	width: 20px
+	height: 20px
+	background-color: #E9E9E9
+	z-index: -2
+	bottom: -10px
+	right: -10px
+.smallRb
+	position: absolute
+	width: 10px
+	height: 10px
+	background-color: transparent
+	border-top: 1px solid $white
+	border-left: 1px solid $white
+	bottom: 0
+	right: 0
+.featuresItem
+	h3
+		text-align: center
+		margin-top: 15px
+		font-family: "OswaldBold"
+		font-size: 18px
+		text-transform: uppercase
+		color: $black
+	p
+		margin-top: 30px
+		font-size: 13px
+		color: #777
+		text-align: center
+		line-height: 21px
+		font-family: $default-font
+
+.trainersSection
+	background-image: url(../img/trainersBg.jpg);
+	margin-top: 70px
+	padding-bottom: 40px
+.titleH2
+	padding-top: 60px
+	padding-bottom: 60px
+	text-transform: uppercase
+	font-family: "OswaldBold"
+	font-size: 24px
+	color: $white
+	text-align: center
+	position: relative
+	
+	&::after
+
+		position: absolute	
+		content: ''
+		width: 4%
+		border-bottom: 1px solid $white
+		text-align: center
+		bottom: 50px
+		left: 48%
+.trainersItem
+	
+	position: relative
+	margin-bottom: 30px
+	img
+		max-width: 100%
+	&:hover
+		.trainersInfo
+			opacity: 1
+.trainerName
+	background-color: $white
+	margin-top: -3px
+	padding: 15px
+	max-width: 100%	
+
+	p
+		font-family: "OswaldBold"	
+		font-size: 14px
+		text-transform: uppercase
+		color: $black
+	span
+		font-family: "OswaldRegular"
+		font-size: 12px
+		color: #C1C1C1
+		text-transform: uppercase
+
+.trainersInfo
+	position: absolute
+	width: 100%
+	height: 100%
+	background-color: $white
+	padding-left: 20px
+	padding-right: 20px
+	opacity: 0
+	transition: 0.75s ease-out
+
+.trainersDescription
+	
+	margin-top: 20px
+	font-size: 13px
+	color: #777
+	line-height: 21px
+	font-family: $default-font
+
+.hoverName
+	margin-top: 35px
+	padding: 0
+.trainersSocial
+	margin-top: 20px
+	display: block
+	text-align: center
+	a
+		margin-right: 10px
+		color: #777
+		&:hover
+			color: $accent	
+.cBlack
+	color: $black
+	padding-bottom: 60px
+	&::after
+		border-bottom: 1px solid $black
+.gallarySlogan
+	font-family: $default-font
+	font-size: 12px
+	color: $grey
+	text-align: center
+	line-height: 1.6
+	margin-top: -30px
+.gallaryItem
+	margin-top: 30px
+	img
+		max-width: 100%
+	p
+		font-family: "OswaldBold"
+		font-size: 14px
+		color: $black
+		line-height: 2
+	span
+		font-family: "OswaldRegular"
+		color: $grey
+		font-size: 12px
+.gallaryImg
+	position: relative
+	display: inline-block
+	&:hover
+		.gallaryImgCover
+			height: 99%
+			bottom: 1%
+
+.gallaryImgCover
+	height: 0%
+	width: 100%
+	position: absolute
+	background-color: rgba(226, 80, 80, 0.75);
+	background-image: url(../img/show.png)
+	background-position: center
+	background-repeat: no-repeat
+	bottom: 100%
+	transition: 0.5s ease
+.pricingSection
+	margin-top: 60px
+	background-color: $accent
+	padding-bottom: 60px
+.priceBlock
+	text-align: center
+	background-color: #d14343
+	padding-top: 50px
+	padding-bottom: 50px
+	font-family: "OswaldBold"
+	margin-bottom: 30px	
+	&:hover
+		border: 1px solid white
+		transform: scale(1.05)
+	
+	color: $white
+.includings
+	list-style-image: url(../img/tick.png)
+	list-style-position: inside
+	font-family: $default-font
+	font-size: 14px
+	line-height: 36px
+.price
+	margin-bottom: 50px
+	
+	font-size: 36px
+	sup
+		font-size: 14px
+
+	
+.package
+	font-size: 18px
+	text-transform: uppercase
+	padding-bottom: 50px
+.signUp
+	width: 60%
+	line-height: 50px
+	margin-top: 15px
+	background-color: $accent
+	border: none
+	font-size: 18px
+	&:hover
+		background-color: $white
+		color: $accent
+.parthnersSlider
+	width: 80%
+	margin: 0 auto
+
+	
+img[src="img/leftArrow2.png"]
+	left: -3%		
+img[src="img/rightArrow2.png"]
+	right: -3%
+
+.footer
+	margin-top: 60px
+	background-color: $black
+	
+	
+.footerSocial
+	border-bottom: 1px solid #323232
+	display: inline-block
+	padding-top: 35px
+	padding-bottom: 35px
+	background-color: $black
+	
+.footerTwitt
+	color: #717171
+	font-family: $default-font
+	font-size: 13px
+	line-height: 21px
+	.fa-twitter
+		// font-size: 18px
+		padding-right: 10px
+.footerSocialIcons
+	line-height: 21px
+	float: right
+	margin: 0
+	line-height: 40px
+
+.secondFooter
+	padding-top: 50px
+	background-image: url(../img/footerBg.jpg) 
+	background-position: center
+	background-repeat: no-repeat
+.footerTitle
+	font-family: "OswaldBold"
+	font-size: 14px	
+	text-transform: uppercase
+	color: $white
+	margin-bottom: 15px
+
+	
+.footerInfo
+	font-size: 12px
+	line-height: 21px
+	font-family: $default-font
+	color: $grey
+	a
+		display: block
+		color: $grey
+
+	.fa
+		margin-right: 5px
+.copyright
+	color: #707070
+	margin-top: 140px
+
+.inputFooter
+	margin-bottom: 5px
+	// margin-left: -15px
+	width: 100%
+	border: 1px solid $grey
+	padding-left: 10px
+	color: $grey
+	font-family: "OswaldBold"
+	font-size: 12px
+	text-transform: uppercase
+	background-color: transparent
+	outline: none
+	&:focus
+		border: 1px solid $white
+.smallInput
+	height: 35px
+.bigInput
+	height: 110px
+textarea
+	padding-top: 10px
+	margin-top: 20px
+.submit
+	width: 100%
+	background-color: $accent
+	font-family: "OswaldBold"
+	font-size: 12px
+	text-transform: uppercase
+	color: $white
+	height: 35px
+	border: none
+	margin-top: 20px
+.validation
+	margin-top: 10px
+	font-family: $default-font
+	font-size: 12px
+.modal
+	position: fixed
+	width: 100%
+	height: 100%
+	background-color: rgba(0,0,0,0.9);
+	left: 0
+	top: 0
+	z-index: 5
+	display: none
+	img
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px
+    padding-top: 5%
+	p
+  	text-align: center
+  	margin-top: 15px
+  	font-size: 30px
+  	color: $white
+  	font-family: "OswaldBold"
+
+	.close
+    position: absolute
+    top: 15px
+    right: 35px
+    color: #f1f1f1
+    font-size: 40px
+    font-weight: bold
+    transition: 0.3s
+    cursor: pointer
+
+
+
+
+
+
+
+			
+
+	
+
+
+
+
+
+
+
+
+	
+
+
+
+
+
+
+
+
+
+
+		
+
+
+
+
+
+
+
+
+	
+
+
+	
+
+	
+
+
+
+
+
+				
+				
+				
+
+
+@import "media" // Всегда в конце

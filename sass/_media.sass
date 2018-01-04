@@ -1,0 +1,103 @@
+@import "vars"
+
+/*==========  Desktop First  ==========*/
+
+/* Large Devices, Wide Screens */
+@media only screen and (max-width : 1200px)
+	.trainersDescription
+		font-size: 12px
+		line-height: 1.1
+	.trainersSocial
+		a
+			margin-right: 5px
+
+
+
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 992px)
+	.footerSocialIcons
+		float: inherit
+		text-align: center
+		font-size: 25px
+		margin-top: 20px
+	.copyright
+		margin-top: 20px
+
+
+/* Small Devices, Tablets */
+@media only screen and (max-width : 768px)
+	.showMnu
+		display: block
+	.mainNav
+		position: relative
+		z-index: 2
+		float: none
+		width: 100%
+		display: none
+		ul
+			background-color: $black
+			
+			li
+				display: block
+				padding: 0
+				
+				a
+					display: block
+					line-height: 20px
+					padding: 10px
+				
+				&:hover
+					background-color: lighten($black,10%)
+	.gallaryItem
+		text-align: center
+	.parthnersSection
+		display: none
+
+				
+	.trainersItem
+		margin: 0 auto
+		width: 255px
+		margin-bottom: 30px
+	.slick-arrow 
+		position: absolute
+		top: 15%
+	.trainersDescription
+		font-size: 13px
+		line-height: 21px
+	.trainersSocial
+		a
+			margin-right: 10px
+	.modal
+		padding-top: 35%
+	.gallaryImg
+		a
+			display: none
+
+				
+
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width : 480px)
+	.topSliderAboveTitle
+	
+		font-size: 14px
+		padding: 7px
+		margin-bottom: 2px
+	.topSliderMainTitle
+		font-size: 20px
+		padding: 15px
+		color: $white
+		margin-bottom: 2px
+	.topSliderUnderTitle
+		font-size: 14px
+		padding: 10px 15px
+		display: inline-block
+
+
+	/**/
+
+
+/* Custom, iPhone Retina */
+@media only screen and (max-width : 320px)
+	/**/
